@@ -6,7 +6,9 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 # make functions from module available
 include(MyModule)
-include(OtherModule)
+
+# other option - CMAKE_MODULE_PATH not needed then
+include(cmake/OtherModule.cmake)
 
 my_function()
 other_function()
