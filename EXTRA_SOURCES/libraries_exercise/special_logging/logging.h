@@ -14,7 +14,7 @@ void log(std::string str) {
     std::time_t currentTime = std::chrono::system_clock::to_time_t(now);
 
     // Convert the time_t object to a local time string
-    std::cout << std::ctime(&currentTime) << ":" << str << std::endl;
+    std::cout << str << " -> " << std::ctime(&currentTime) << std::endl;
 };
 
 #endif // LOGGIN_H
