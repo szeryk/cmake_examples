@@ -1,0 +1,11 @@
+function(print_debug_vars)
+    message("Root source dir: ${CMAKE_SOURCE_DIR}")
+    message("Root build dir: ${CMAKE_BINARY_DIR}")
+    message("Current source dir: ${CMAKE_CURRENT_SOURCE_DIR}")
+    message("Current build dir: ${CMAKE_CURRENT_BINARY_DIR}")
+    message("Current list dir: ${CMAKE_CURRENT_LIST_DIR}")
+    message("Current list file: ${CMAKE_CURRENT_LIST_FILE}")
+endfunction()
+
+message("Testing debugging vars from included .cmake file.")
+print_debug_vars()
