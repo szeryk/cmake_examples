@@ -1,0 +1,11 @@
+{
+    "version": 6,
+    "buildPresets": [
+        {
+            "name": "dev",
+            "configurePreset": "makefiles",
+            "configuration": "Debug",
+            "targets": ["TestApp", "ExtraApp"]
+        }
+    ]
+}
