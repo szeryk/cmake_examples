@@ -13,7 +13,6 @@ include(cmake/CPM.cmake)
 # there are different ways of adding packages, this is the shortest one
 CPMAddPackage("gh:fmtlib/fmt#7.1.3")
 CPMAddPackage("gh:nlohmann/json@3.10.5")
-CPMAddPackage("gh:catchorg/Catch2@3.4.0")
 
 target_link_libraries(TestApp fmt::fmt nlohmann_json::nlohmann_json)
 
