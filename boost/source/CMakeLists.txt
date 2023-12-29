@@ -10,6 +10,7 @@ find_package(Boost 1.50 REQUIRED COMPONENTS filesystem regex)
 target_link_libraries(TestApp PRIVATE Boost::filesystem Boost::regex)
 
 # it's possible to fetch and build Boost instead of using find package:
+# warning -> downloading boost takes time...
 # set(BOOST_INCLUDE_LIBRARIES filesystem regex)
 # set(BOOST_ENABLE_CMAKE ON)
 # include(FetchContent)
