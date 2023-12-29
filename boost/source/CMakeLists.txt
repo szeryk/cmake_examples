@@ -8,3 +8,14 @@ add_executable(TestApp main.cpp)
 find_package(Boost 1.50 REQUIRED COMPONENTS filesystem regex)
 
 target_link_libraries(TestApp PRIVATE Boost::filesystem Boost::regex)
+
+# it's possible to fetch and build Boost instead of using find package:
+# set(BOOST_INCLUDE_LIBRARIES filesystem regex)
+# set(BOOST_ENABLE_CMAKE ON)
+# include(FetchContent)
+# FetchContent_Declare(
+#   Boost
+#   GIT_REPOSITORY https://github.com/boostorg/boost.git
+#   GIT_TAG boost-1.80.0
+# )
+# FetchContent_MakeAvailable(Boost)
